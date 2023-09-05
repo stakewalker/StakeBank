@@ -1,4 +1,5 @@
 public class App {
+    public static void main(String[] args) {
         // Gerando clientes
         Cliente conta1 = new Cliente("Thomas Anderson", 4321);
         Cliente conta2 = new Cliente("Lara Croft", 4322);
@@ -18,14 +19,15 @@ public class App {
 
         // Alterando e exibindo os valoresdo cartão de crédito
         cartao1.setNumero("4444-1111-2222-3333");
-        cartao1.setDataValidade("07/31");
+        cartao1.setValidade("07/31");
         cartao2.setNumero("7777-5555-8888-6666");
-        cartao2.setDataValidade("11/28");
+        cartao2.setValidade("11/28");
 
-        System.out.println("Cartão 1 - Número: " + cartao1.getNumero() + ", Data de Validade: " + cartao1.getDataValidade());
-        System.out.println("Cartão 2 - Número: " + cartao2.getNumero() + ", Data de Validade: " + cartao2.getDataValidade());
+        System.out.println("Cartão 1 - Número: " + cartao1.getNumero() + ", Data de Validade: " + cartao1.getValidade());
+        System.out.println("Cartão 2 - Número: " + cartao2.getNumero() + ", Data de Validade: " + cartao2.getValidade());
 
-        // Gerando uma agência e exibindo atributos
+        // Gerando uma agência e exibindo atributos 
         Agencia agencia = new Agencia(123);
         System.out.println("Agência - Número: " + agencia.getNumero());
+    }
 }
